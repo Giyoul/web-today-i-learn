@@ -112,8 +112,21 @@ main {
 
 .gallery-grid img {
   width: 100%;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 9 / 16;
   object-fit: cover;
+  border-radius: 4px;
+}
+
+/* 영상 작품 카드 */
+.work-card--video {
+  flex-direction: column;
+}
+
+.work-card--video iframe {
+  width: 100%;
+  max-width: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
   border-radius: 4px;
 }
 
@@ -362,10 +375,10 @@ footer {
 
 /* 변수 */
 :root {
-  --primary-color: #4a7c59;
-  --nav-bg-color: #fff;
-  --hero-bg-color: #f8faf8;
-  --card-bg-color: #fafafa;
-  --divider-color: #e8e8e8;
-  --font-default-color: #333;
+  --primary-color: #977255;
+  --nav-bg-color: #e5e3dc;
+  --hero-bg-color: #eeede9;
+  --card-bg-color: #e3e0d7;
+  --divider-color: #e3e0d7;
+  --font-default-color: #2C3639;
 }

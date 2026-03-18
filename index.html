@@ -4,19 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
 
-    <!-- TODO: Open Graph 메타 태그를 설정하세요 -->
-    <!-- <meta property="og:title" content="페이지 제목" /> -->
-    <!-- <meta property="og:description" content="페이지 설명" /> -->
-    <!-- <meta property="og:image" content="./images/thumbnail.jpg" /> -->
+    <!-- Open Graph -->
+    <meta property="og:title" content="영기 소개서" />
+    <meta property="og:description" content="영기를 소개하는 TIL 페이지입니다." />
+    <meta property="og:image" content="./images/thumbnail.png" />
 
-    <title>Today I Learn</title>
+    <title>영기 | Today I Learn</title>
     <link rel="stylesheet" href="./css/main.css" />
     <script src="./js/index.js" defer></script>
   </head>
   <body>
     <!-- 상단 내비게이션 -->
     <nav class="top-nav">
-      <span class="nav-logo">My Page</span>
+      <span class="nav-logo">영기</span>
       <ul class="nav-links">
         <li><a href="#about">자기소개</a></li>
         <li><a href="#gallery">갤러리</a></li>
@@ -29,59 +29,71 @@
     <section class="hero" id="about">
       <div class="profile-card">
         <div class="profile-image">
-          <!-- TODO: 프로필 이미지를 넣어주세요 -->
-          <!-- <img src="./images/profile.jpg" alt="프로필 사진" /> -->
+          <img src="./images/profile.jpeg" alt="영기" />
         </div>
         <div class="profile-info">
-          <h1>닉네임</h1>
-          <p class="tagline">한 줄 소개를 작성해주세요.</p>
+          <h1>영기</h1>
+          <p class="tagline">무지(無知)를 불꽃으로 삼는 탐구자</p>
         </div>
       </div>
     </section>
 
     <main>
-      <!-- 자기소개 -->
-      <section class="content-section">
-        <h2>자기소개</h2>
-        <p>자기소개를 작성해주세요.</p>
-        <!-- TODO: 소개 글 안에 블로그, GitHub 등 관련 링크를 <a> 태그로 연결하세요 -->
-      </section>
-
       <!-- 기본 정보 -->
       <section class="content-section" id="info">
         <h2>기본 정보</h2>
-        <!-- TODO: 자신의 기본 정보를 표(<table>)로 정리하세요 -->
         <table class="info-table">
           <tr>
             <th>이름</th>
-            <td></td>
+            <td>김기영</td>
           </tr>
           <tr>
             <th>MBTI</th>
-            <td></td>
+            <td>INTJ</td>
           </tr>
           <tr>
             <th>취미</th>
-            <td></td>
+            <td>디지털 드로잉, MIDI 작곡, 소설 집필, 자기 개발</td>
           </tr>
           <tr>
             <th>좋아하는 음식</th>
-            <td></td>
+            <td>고기!</td>
           </tr>
         </table>
+      </section>
+
+      <!-- 자기소개 -->
+      <section class="content-section">
+        <h2>자기소개</h2>
+        <p>
+          안녕하세요! 저는 모르는 것을 마주할 때 오히려 설레는, 끊임없이 배움을 즐기는 개발자 영기입니다.<br>
+          디지털 드로잉으로 상상을 그리고, MIDI로 감정을 소리에 담고, 소설로 이야기를 엮으며
+          다양한 방식으로 세상을 표현하는 것을 좋아합니다.
+        </p>
+        <p>
+          개발 공부 기록은
+          <a href="https://youngi2.tistory.com/" target="_blank" rel="noopener noreferrer">기술 블로그</a>에,
+          회고와 성장 일지는
+          <a href="https://velog.io/@giyoul/posts" target="_blank" rel="noopener noreferrer">회고 블로그</a>에 남기고 있습니다.<br>
+          코드와 프로젝트는
+          <a href="https://github.com/Giyoul" target="_blank" rel="noopener noreferrer">GitHub</a>에서 확인하실 수 있습니다.
+        </p>
       </section>
 
       <!-- 나만의 갤러리 -->
       <section class="content-section" id="gallery">
         <h2>나만의 갤러리</h2>
-        <p class="section-desc">갤러리 부제를 작성해주세요. (예: 기억에 남는 여행지)</p>
+        <p class="section-desc">내 기억속 장면들</p>
         <div class="gallery-grid">
-          <!-- TODO: 9장의 이미지를 배치하세요 -->
-          <!--
-          <img src="./images/gallery-1.jpg" alt="갤러리 이미지 1" />
-          <img src="./images/gallery-2.jpg" alt="갤러리 이미지 2" />
-          ...
-          -->
+          <img src="./images/gallery-1.jpeg" alt="갤러리 사진 1" />
+          <img src="./images/gallery-2.jpeg" alt="갤러리 사진 2" />
+          <img src="./images/gallery-3.jpeg" alt="갤러리 사진 3" />
+          <img src="./images/gallery-4.jpeg" alt="갤러리 사진 4" />
+          <img src="./images/gallery-5.jpeg" alt="갤러리 사진 5" />
+          <img src="./images/gallery-6.jpeg" alt="갤러리 사진 6" />
+          <img src="./images/gallery-7.jpeg" alt="갤러리 사진 7" />
+          <img src="./images/gallery-8.jpeg" alt="갤러리 사진 8" />
+          <img src="./images/gallery-9.jpeg" alt="갤러리 사진 9" />
         </div>
       </section>
 
@@ -89,16 +101,29 @@
       <section class="content-section" id="works">
         <h2>나를 울린 인생 작품</h2>
         <div class="works-list">
-          <!-- TODO: 최소 2가지 작품을 소개하세요 -->
-          <!-- TODO: 작품 중 하나는 <video> 또는 <iframe>으로 영상을 삽입하세요 -->
+          <!-- 작품 1: 이미지 -->
           <article class="work-card">
             <div class="work-thumbnail">
-              <!-- 작품 이미지 -->
+              <img src="./images/work.webp" alt="두근두근 내인생 포스터" />
             </div>
             <div class="work-info">
-              <h3>작품 제목</h3>
-              <p>작품에 대한 설명을 작성해주세요.</p>
+              <h3>두근두근 내 인생</h3>
+              <p>삶이란 무엇이며 무엇을 원동력으로 하여 살아가야 하는가에 대해 생각해볼 수 있는 영화입니다.</p>
             </div>
+          </article>
+
+          <!-- 작품 2: 영상 (iframe) -->
+          <article class="work-card work-card--video">
+            <div class="work-info">
+              <h3>목소리의 형태</h3>
+              <p>아픔이란 무엇일까, 그리고 아픔이란 지워질 수 있는가? 내 행동과 말의 무게에 대해 생각해볼 수 있는 작품입니다.</p>
+            </div>
+            <iframe
+              src="https://www.youtube.com/embed/V3DujpF8Qrk"
+              title="목소리의 형태 예고편"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
           </article>
         </div>
       </section>
@@ -128,21 +153,19 @@
           </div>
         </form>
 
-        <!-- TIL 목록: 폼으로 등록하면 여기에 항목이 추가됩니다 -->
+        <!-- TIL 목록 -->
         <div class="til-list" id="til-list">
-          <!-- 아래는 예시 항목입니다. 자유롭게 수정하거나 삭제하세요 -->
           <article class="til-item">
             <time>2026-03-15</time>
-            <h3>HTML 시멘틱 태그</h3>
-            <p>header, nav, main, section, article, footer 등 시멘틱 태그의 역할과 사용법을 배웠다.</p>
+            <h3>HTML 시맨틱 태그</h3>
+            <p>header, nav, main, section, article, footer 등 시맨틱 태그의 역할과 사용법을 배웠다.</p>
           </article>
         </div>
       </section>
-
     </main>
 
     <footer>
-      <p>&copy; My Page</p>
+      <p>&copy; 영기 — My TIL Page</p>
     </footer>
   </body>
 </html>
